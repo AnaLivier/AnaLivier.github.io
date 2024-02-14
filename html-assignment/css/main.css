@@ -1,0 +1,42 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+header, footer {
+    background-color: aqua;
+}
+
+.site-title {
+    color: blueviolet;
+}
+
+#my-image {
+    box-shadow: 0 0 2px 1px black;
+}
+
+.hobbies-list {
+    list-style-type: square;
+}
+
+.hobbies-list li:nth-child(odd) {
+    background-color: pink ;
+}
+nav .nav-list {
+    list-style-type: none;
+}
+
+nav .nav-list a {
+    text-decoration: none;
+}
+
+nav .nav-list a { 
+    background-color: yellow;
+    border: 1px solid blue;
+    border-radius: 4px;
+}
+
+nav .nav-list a:hover,
+nav .nav-list a:focus {
+    background-color: palevioletred;
+    color: pink;
+}
