@@ -1,31 +1,56 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zxx">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Three Star Media Website</title>
     <link rel="stylesheet" href="css/style.css">
+    
+    <!--GOOGLE FONT-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+    <!--FONT AWESOME-->
+    <script src="https://kit.fontawesome.com/58ddf2de3a.js" crossorigin="anonymous"></script>
+
 </head>
 <body>
-<!-- NAVIGATION MENU -->
+    
+    <!-- NAVIGATION MENU -->
     <nav>
+        
+        <div class="top-navigation-menu">
+            <a class="logo" href="index.html"><img class="logo-image" src="images/logo.png" alt="Logo"></a>
+
+            <div class="home">
+                <a href="index.html">Home</a>
+            </div>
+        </div>
+
         <ul>
-            <li><a href="index.html">Home</a></li>
             <li><a href="#about-us">About Us</a></li>
             <li><a href="#our-services">Services</a></li>
             <li><a href="#our-team">Team</a></li>
             <li><a href="#contact-us">Contact</a></li>
+            <li class="search-bar">
+                <form action="#" method="get">
+                    <input type="text" placeholder="Search" name="search">
+                    <button class="search" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </form>
+            </li>
         </ul>
     </nav>
 
-<!-- MAIN HEADER -->
-    <header>
-        <h1>Welcome to Three Star Media</h1>  
-        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Magnam rerum voluptas nesciunt quam nostrum similique nihil laboriosam provident neque, recusandae voluptate temporibus! Animi accusamus id fuga voluptatibus facilis iusto consequuntur!
-        <img src="images/main-banner.jpg" alt="MainHome">
-        <button>Connect with us</button>
-        </p> 
-    </header>
+    <!-- MAIN HEADER -->
+    <div class="welcome">
+        <div class="welcome-content">
+        <h1 class="welcome-title">Welcome to Three Star Media</h1>  
+        <p class="welcome-paragraph">Lorem ipsum dolor sit amet consectetur adipiscing elit. Magnam rerum voluptas nesciunt quam nostrum similique nihil laboriosam provident neque, recusandae voluptate temporibus! Animi accusamus id fuga voluptatibus facilis iusto consequuntur!</p> 
+        <button class="connect">Connect with us<i class="fa-solid fa-play"></i></button>
+        
+        </div>
+    </div>
 
  
     <main>
@@ -33,51 +58,65 @@
         <!-- ABOUT US -->
 
         <section class="about-us" id="about-us">
-            <h2>About Us</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Libero unde repellendus exercitationem asperiores ducimus placeat, maxime soluta nesciunt pariatur aliquam consequuntur sequi saepe sint praesentium laboriosam perferendis eius amet ad?</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Animi, velit ipsam? Atque accusamus, excepturi corrupti sunt reiciendis soluta quo commodi guidem, non perferendis vel sed facilis rerum cum in exercitationem?</p>
-            <img src="images/about-us.jpg" alt="Aboutus">
+            <img class="about-image" src="images/about-us.jpg" alt="Aboutus">
+            <h2 class="about-title">About Us</h2>
+            <p class="about-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Libero unde repellendus exercitationem asperiores ducimus placeat, maxime soluta nesciunt pariatur aliquam consequuntur sequi saepe sint praesentium laboriosam perferendis eius amet ad?</p>
+            <p class="about-paragraph-two">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Animi, velit ipsam? Atque accusamus, excepturi corrupti sunt reiciendis soluta quo commodi guidem, non perferendis vel sed facilis rerum cum in exercitationem?</p>
+            
         </section>
 
 
         <!-- OUR SERVICES -->
 
         <section class="our-services"  id="our-services">
-            <h2>Our Services</h2>
-        
+            <h2 class="services-title">Our Services</h2>
+            
             <div class="service">
+                <img class="service-image" src="images/digital.jpg" alt="Digital Transformation">
+                <div class="service-one-content">
                 <h3>Digital Transformation</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Eius vel, rem inventore quo tempora animi mollitia eaque error qui consectetur in reprehenderit magnam at vitae corporis quaerat deleniti explicabo nisi?</p>
-                <button>Digital Plans</button>
-                <img src="images/digital.jpg" alt="Digital Transformation">
+                <button class="service-button">Digital Plans<i class="fa-solid fa-play"></i></button>
+
+                </div>
+                
             </div>
         
             <div class="service">
+                <img class="service-image" src="images/marketing.jpg" alt="Marketing">
+                <div class="service-two-content">
                 <h3>Marketing</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Eius vel, rem inventore quo tempora animi mollitia eaque error qui consectetur in reprehenderit magnam at vitae corporis quaerat deleniti explicabo nisi?</p>
-                <button>Marketing Plans</button>
-                <img src="images/marketing.jpg" alt="Marketing">
+                <button class="service-button">Marketing Plans<i class="fa-solid fa-play"></i></button>
+                </div>
+                
             </div>
         
             <div class="service">
+                <img class="service-image" src="images/video.jpg" alt="Video Production">
+                <div class="service-three-content">
                 <h3>Video Production</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Eius vel, rem inventore quo tempora animi mollitia eaque error qui consectetur in reprehenderit magnam at vitae corporis quaerat deleniti explicabo nisi?</p>
-                <button>Video Plans</button>
-                <img src="images/video.jpg" alt="Video Production">
+                <button class="service-button">Video Plans<i class="fa-solid fa-play"></i></button>
+                </div>
             </div>
         
             <div class="service">
+                <img class="service-image" src="images/web.jpg" alt="Web Development">
+                <div class="service-four-content">
                 <h3>Web Development</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Eius vel, rem inventore quo tempora animi mollitia eaque error qui consectetur in reprehenderit magnam at vitae corporis quaerat deleniti explicabo nisi?</p>
-                <button>Web Plans</button>
-                <img src="images/web.jpg" alt="Web Development">
+                <button class="service-button">Web Plans<i class="fa-solid fa-play"></i></button>
+                </div>
             </div>
         
             <div class="service">
+                <img class="service-image" src="images/print.jpg" alt="Print">
+                <div class="service-five-content">
                 <h3>Print</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Eius vel, rem inventore quo tempora animi mollitia eaque error qui consectetur in reprehenderit magnam at vitae corporis quaerat deleniti explicabo nisi?</p>
-                <button>Print Plans</button>
-                <img src="images/print.jpg" alt="Print">
+                <button class="service-button">Print Plans<i class="fa-solid fa-play"></i></button>
+                </div>
             </div>
         </section>
 
@@ -90,7 +129,7 @@
             <div class="content">
                 <h2>Our Vision</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Ex voluptatem deleniti lure, sit, accusantium rerum est commodi veniam tempora perspiciatis nobis officiis fagiat eaque. Veritatis exercitationem delectus ex ab laudantium.</p>
-                <a href="#" class="learn-more">Learn More</a>
+                <button class="learn-button">Learn More<i class="fa-solid fa-play"></i></button>
             </div>
         </section>
         
@@ -98,26 +137,39 @@
         <!-- OUR TEAM -->
 
         <section class="our-team" id="our-team">
-            <h2>Our Team</h2>
+            <h2 class="team-title">Our Team</h2>
             <div class="team-member">
+                <div class="team-container-one">
+                <img class="team-image" src="images/john.jpg" alt="John Doe">
+                <div class="team-content-one">
                 <h3>John Doe</h3>
-                <p>CEO and Co-owner</p>
+                <h4>CEO and Co-owner</h4>
                 <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Amet, aspernatur ratione sed cum ad officiis sint comque fugiat similique. Earum laudantium deleniti possimus? Voluptatem architecto repellendus harum sit voluptatum tempora.</p>
-                <img src="images/john.jpg" alt="John Doe">
+            </div>
+            </div>
             </div>
             <div class="team-member">
+                <div class="team-container-two">
+                    
+                <img class="team-image" src="images/bob.jpg" alt="Bob Rite">
+                <div class="team-content-two">
                 <h3>Bob Rite</h3>
-                <p>CFO and Co-owner</p>
+                <h4>CFO and Co-owner</h4>
                 <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Amet, aspernatur ratione sed cum ad officiis sint comque fugiat similique. Earum laudantium deleniti possimus? Voluptatem architecto repellendus harum sit voluptatum tempora.</p>
-                <img src="images/bob.jpg" alt="Bob Rite">
+                </div>
+                </div>
             </div>
         </section>
 
 
         <!-- CONTACT US -->
+    
         <section class="contact-us" id="contact-us">
+            
             <h2>Contact Us</h2>
-            <p>Send us a message</p>
+
+            <div class="contact-container">
+            <h3>Send us a message</h3>
             <form>
                 <label for="full-name">Full Name</label>
                 <input type="text" id="full-name" name="full-name" required>
@@ -130,19 +182,12 @@
         
                 <button type="submit">Send</button>
             </form>
-        </section>
-
-         <!-- LOCATION -->
-        <section class="location">
-            <h2>Location</h2>
-            <div class="map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d44883.117055126866!2d-75.77806281522696!3d45.32468834274913!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20-%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1712029339120!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </section>
+    
 
-
-        <!-- HOURS -->
-        <section class="hours-of-operation">
+         <!-- HOURS -->
+         <section class="hours-of-operation">
             <h2>Hours of Operation</h2>
             <table>
                 <tr>
@@ -159,8 +204,17 @@
                 </tr>
             </table>
         </section>
-        
 
+         <!-- LOCATION -->
+         
+        <section class="location">
+            <h2>Location</h2>
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d44883.117055126866!2d-75.77806281522696!3d45.32468834274913!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20-%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1712029339120!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            
+        </section>
+    
 
     </main>
 
